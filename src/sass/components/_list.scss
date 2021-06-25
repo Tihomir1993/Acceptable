@@ -1,0 +1,12 @@
+.list {
+    &-item {
+        list-style: none;
+
+        a {
+            color: #FFFFFF;
+            text-transform: capitalize;
+            display: inline-block;
+            font-family: Lato;
+        }
+    }
+}

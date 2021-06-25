@@ -1,0 +1,43 @@
+.content-box {
+    padding: 0 .9375em;
+
+    .image-wrapper {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .image-marker {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-family: Sora;
+            padding: .125em .75em;
+            color: #FFFFFF;
+            background: #01122B;
+            position: absolute;
+            top: .75em;
+            left: .75em;
+            border-radius: .25em;
+        }
+    }
+
+    &-location {
+
+        &-city,
+        &-date {
+            display: block;
+            color: rgba(6, 29, 65, .8);
+            font-family: Sora;
+            padding-bottom: .25em;
+
+        }
+    }
+
+    &-description {
+        font-size: 1.125em;
+        color: rgba(6, 29, 65, .8);
+
+    }
+
+}
