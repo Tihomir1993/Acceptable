@@ -1,11 +1,11 @@
 .site-footer {
-    background: #000F26;
+    background: $color-secondary;
     padding-top: 4em;
 
     &-inner {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 3.75em;
+        padding-bottom: 2.875em;
 
         @media(max-width:40em) {
             flex-wrap: wrap;
@@ -50,6 +50,7 @@
                 a {
                     padding-bottom: 1.25em;
                     font-family: Montserrat;
+                    opacity: 0.6;
                 }
             }
         }
@@ -65,16 +66,18 @@
 
         &-text {
             font-family: Montserrat;
-            color: #FFFFFF;
+            color: $color-primary;
+            opacity: 0.6;
         }
 
         .list {
             display: flex;
+            margin: 0;
 
             &-item {
                 a {
                     text-decoration: underline;
-                    color: #006ED6;
+                    color: $color-tetriary;
                     padding-right: 1.5em;
                     font-family: Montserrat;
 

@@ -11,9 +11,9 @@
     }
 
     &-contact {
-        padding: .875em 1.125em;
+        padding: .5em 1em;
         border: 2px solid $color-primary;
-        border-radius: .5em;
+        border-radius: .25em;
     }
 
     &-login {
@@ -22,15 +22,15 @@
     }
 
     &-choose {
-        padding: 1.375em 1.75em 1.375em 1.375em;
-        color: #006ED6;
+        padding: 1.375em 1.5em 1.375em 1.375em;
+        color: $color-tetriary;
         background: rgba(0, 110, 214, 0.09);
         font-weight: 700;
         font-size: 1.125em;
         border-radius: .5em;
 
         svg {
-            padding-left: 1em;
+            margin-left: .5em;
         }
     }
 }

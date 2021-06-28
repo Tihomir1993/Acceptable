@@ -1,22 +1,30 @@
 .section-events {
-    padding: 13.5em 0 6.875em;
+    padding: 6.95em 0 6.875em;
+    background: $color-primary;
+
+    @media(max-width: 45.85em) {
+        padding: 0;
+    }
 
     .row {
         align-items: center;
     }
 
-    .no-gutter {
-        padding: 0;
+    .button-right-position {
+        text-align: right;
+    }
 
-        @media(min-width: 40em) {
-            padding: 0;
+    .events-box {
+        margin-top: 2.5em;
+
+        .columns {
+            padding: 0 1.25em;
         }
     }
 
     .events-filter {
 
         border-bottom: 1px solid rgba(2, 19, 46, .1);
-
 
         .list {
             display: flex;
@@ -41,10 +49,11 @@
                     top: calc(100% - 6px);
                     left: 0;
                     right: 0;
-                    background: #006ED6;
+                    background: $color-tetriary;
                     height: 6px;
                     border-radius: 1em 1em 0 0;
                 }
+
 
 
 

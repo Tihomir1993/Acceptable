@@ -1,6 +1,4 @@
 .content-box {
-    padding: 0 .9375em;
-
     .image-wrapper {
         position: relative;
 
@@ -12,9 +10,9 @@
             text-transform: capitalize;
             font-weight: 700;
             font-family: Sora;
-            padding: .125em .75em;
-            color: #FFFFFF;
-            background: #01122B;
+            padding: .4em .75em .25em .75em;
+            color: $color-primary;
+            background: $background-marker;
             position: absolute;
             top: .75em;
             left: .75em;
@@ -37,6 +35,7 @@
     &-description {
         font-size: 1.125em;
         color: rgba(6, 29, 65, .8);
+        margin-bottom: 2em;
 
     }
 
