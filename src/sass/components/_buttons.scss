@@ -22,7 +22,7 @@
     }
 
     &-choose {
-        padding: 1.375em 1.5em 1.375em 1.375em;
+        padding: 1.125em 1.5em 1.125em 1.375em;
         color: $color-tetriary;
         background: rgba(0, 110, 214, 0.09);
         font-weight: 700;
@@ -31,6 +31,16 @@
 
         svg {
             margin-left: .5em;
+        }
+
+        &:hover {
+            background: rgba(79, 147, 202, 0.753);
+            color: $color-primary;
+        }
+
+        @media(max-width: 45.85em) {
+            width: 100%;
+            text-align: center;
         }
     }
 }

@@ -3,7 +3,17 @@
     background: $color-primary;
 
     @media(max-width: 45.85em) {
-        padding: 0;
+        padding: 1.5em 0;
+
+        .section-heading {
+            .heading-title {
+                font-size: 2.5em;
+            }
+
+            .heading-description {
+                font-size: 1em;
+            }
+        }
     }
 
     .row {
@@ -17,9 +27,6 @@
     .events-box {
         margin-top: 2.5em;
 
-        .columns {
-            padding: 0 1.25em;
-        }
     }
 
     .events-filter {
@@ -46,7 +53,7 @@
                 &:first-child::after {
                     content: "";
                     position: absolute;
-                    top: calc(100% - 6px);
+                    top: calc(100% - 5px);
                     left: 0;
                     right: 0;
                     background: $color-tetriary;
@@ -62,7 +69,7 @@
                     font-weight: 700;
                     color: rgba(1, 17, 42, 0.3);
                     font-size: 18px;
-                    padding: 1.75em 0 1.5em 0;
+                    padding: 1.125em .25em 1.125em 0;
 
 
                     &:active {
