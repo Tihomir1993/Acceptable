@@ -4,13 +4,13 @@
     background: transparent;
     color: $color-primary;
     margin: 0;
-    font-family: Lato;
+    font-family: $font-primary;
 
     &:hover {
         background: transparent;
     }
 
-    &-contact {
+    &-ghost {
         padding: .5em 1em;
         border: 2px solid $color-primary;
         border-radius: .25em;
@@ -21,7 +21,7 @@
 
     }
 
-    &-choose {
+    &-select {
         padding: 1.125em 1.5em 1.125em 1.375em;
         color: $color-tetriary;
         background: rgba(0, 110, 214, 0.09);
@@ -34,13 +34,39 @@
         }
 
         &:hover {
-            background: rgba(79, 147, 202, 0.753);
-            color: $color-primary;
+            background: #006ed636;
         }
 
         @media(max-width: 45.85em) {
             width: 100%;
             text-align: center;
         }
+
     }
+
+    &-select-transparent {
+        background: transparent;
+        padding: 1.125em 1.5em 1.125em 1.375em;
+        color: $color-tetriary;
+        font-weight: 700;
+        font-size: 1.125em;
+        border-radius: .5em;
+        margin-top: 3em;
+        margin-left: auto;
+
+        svg {
+            margin-left: .5em;
+        }
+
+        &:hover {
+            background: $button-hover-primary;
+        }
+
+        @media(max-width: 45.85em) {
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+
 }

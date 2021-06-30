@@ -1,15 +1,21 @@
 .site-header {
-    background: $color-secondary;
+    background: linear-gradient(180deg, #000F26 0%, #021533 124.22%);
     padding: 1.375em 0;
     position: relative;
 
     .site-logo {
-        height: 2em;
-        max-width: 9.25em;
         margin-right: 1.25em;
+        margin: 0 1.25em 0 0;
 
-        img {
-            width: 100%;
+        a {
+            display: inline-block;
+            height: 2em;
+            width: 7.5em;
+            text-indent: -999em;
+            background-image: url("../../../dist/images/Group.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+
         }
     }
 
@@ -28,15 +34,20 @@
     .list-wrapper {
         flex: 1 1 auto;
 
-        .list {
-            border-left: 1px solid #263D61;
+        .list-navigation {
+            border-left: 1px solid $border-color-secondary;
             display: flex;
             align-items: center;
             margin: 0;
             padding: 0;
 
             &-item {
-                padding: 0 .625em;
+                padding: 0 1.25em;
+
+                @media(max-width: 59.25em) {
+                    padding: 0 0.5em;
+                    font-size: .875em;
+                }
 
                 @media(max-width: 48.5em) {
                     padding: 0.125em;
@@ -74,7 +85,7 @@
 
 @media(max-width: 45.85em) {
 
-    .button-contact,
+    .button-ghost,
     .button-login {
         display: none;
     }
@@ -87,7 +98,7 @@
         .list-wrapper {
             display: none;
 
-            .list {
+            .list-navigation {
                 display: block;
                 position: absolute;
                 top: 100%;
@@ -97,11 +108,11 @@
 
                 &-item {
                     padding: .875em 1em;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                    border-bottom: 1px solid $border-color-primary;
                 }
 
                 &-item:first-child {
-                    border-top: 1px solid rgba(255, 255, 255, 0.2);
+                    border-top: 1px solid $border-color-primary;
                 }
 
                 &-item:last-child {

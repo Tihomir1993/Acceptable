@@ -10,16 +10,15 @@ window.addEventListener('load', (event) => {
     mobileMenu.addEventListener('click', function (e) {
         let current = e.target.classList;
 
-        if (current.contains("menu-open")) {
-            current.remove("menu-open");
-            nav.style.display = "block";
-            iconOpen.style.display = "none";
-            iconClose.style.display = "inline-block";
-        } else {
-            current.add("menu-open");
+        if (nav.style.display === "block") {
+            ;
             nav.style.display = "none";
-            iconClose.style.display = "none";
             iconOpen.style.display = "inline-block";
+            iconClose.style.display = "none";
+        } else {
+            nav.style.display = "block";
+            iconClose.style.display = "inline-block";
+            iconOpen.style.display = "none";
         }
     });
 
