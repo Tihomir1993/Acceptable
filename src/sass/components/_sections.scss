@@ -2,6 +2,130 @@
     padding: 6.95em 0 6.875em;
     background: $color-primary;
 
+    &-vertical {
+        padding: 6.95em 0 6em;
+
+        .row {
+            align-items: center;
+        }
+
+        .events-filter {
+            margin-bottom: 5em;
+            border-bottom: 1px solid rgba(2, 19, 46, .1);
+
+            .list {
+                display: flex;
+                padding: 0;
+                margin: 0;
+
+                &-item {
+                    padding-left: 1.25em;
+
+                    &:first-child {
+                        position: relative;
+                        padding-left: 0;
+
+                        a {
+                            color: #01112A;
+                        }
+                    }
+
+                    &:first-child::after {
+                        content: "";
+                        position: absolute;
+                        top: calc(100% - 5px);
+                        left: 0;
+                        right: 0;
+                        background: $color-tetriary;
+                        height: 6px;
+                        border-radius: 1em 1em 0 0;
+                    }
+
+
+
+
+                    a {
+                        font-family: Sora;
+                        font-weight: 700;
+                        color: rgba(1, 17, 42, 0.3);
+                        font-size: 18px;
+                        padding: 1.125em .25em 1.125em 0;
+
+
+                        &:active {
+                            color: #01112A;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button-right-position {
+            text-align: right;
+
+            .button-choose {
+                padding: 1.25em 0;
+                margin-top: 3em;
+                background: transparent;
+
+                &:hover {
+                    background: transparent;
+                }
+
+                @media(max-width:45.85em) {
+                    padding: 1.25em;
+                    margin-top: 0;
+                }
+            }
+
+        }
+
+        .content-box {
+            display: flex;
+            align-items: center;
+            padding: 1.25em 1em 1.25em 0;
+
+
+            .image-wrapper {
+                max-width: 12.25em;
+                max-height: 18.75em;
+                margin-right: 2.5em;
+
+                img {
+                    width: auto;
+                }
+            }
+
+            &-title {
+                margin-bottom: .5em;
+            }
+
+
+
+            &-description {
+                margin-top: 1.25em;
+                margin-bottom: 0;
+            }
+        }
+
+        @media(max-width:29em) {
+            .content-box {
+                display: block;
+
+                .image-wrapper {
+                    max-width: initial;
+                    max-height: initial;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+
+
     @media(max-width: 45.85em) {
         padding: 1.5em 0;
 
