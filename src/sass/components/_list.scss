@@ -1,72 +1,81 @@
 .list-navigation {
-  li {
-    list-style: none;
-
-    a {
-      display: inline-block;
-      color: $color-primary;
-
-    }
-  }
-
-  &-item {
-    a {
-      font-family: $font-primary;
-      text-transform: capitalize;
-    }
-  }
-
-  &-controller {
-
-    border-bottom: 1px solid rgba(2, 19, 46, .1);
     display: flex;
-    flex: 1;
-    margin: 0;
-    margin-bottom: 5em;
-    margin-right: 2em;
+    align-items: center;
     padding: 0;
 
     @media(max-width:45.85em) {
-      margin-right: 0;
-      margin-bottom: 1em;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+
+        a {
+            display: inline-block;
+            color: $color-base;
+
+        }
     }
 
     .list-item {
-      padding-left: 1.25em;
-
-      &:first-child {
-        position: relative;
-        padding-left: 0;
-
         a {
-          color: $color-fifth;
+            font-family: $font-primary;
+            text-transform: capitalize;
         }
-      }
-
-      &:first-child::after {
-        background: $color-tetriary;
-        border-radius: 1em 1em 0 0;
-        content: "";
-        height: 6px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: calc(100% - 5px);
-      }
-
-      a {
-        font-family: $font-primary;
-        font-weight: 700;
-        color: $color-sixth;
-        font-size: 18px;
-        padding: 1.125em .25em 1.125em 0;
-
-
-        &:active {
-          color: #01112A;
-        }
-      }
     }
 
-  }
+    &-tabbed {
+
+        border-bottom: 1px solid $border-color-tetriary;
+        display: flex;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+
+        &:not(:last-child) {
+            margin-right: 2em;
+        }
+
+        @media(max-width:45.85em) {
+            margin-right: 0;
+            margin-bottom: 1em;
+        }
+
+        .list-item {
+            padding-left: 1.25em;
+
+            &:first-child {
+                position: relative;
+                padding-left: 0;
+
+                a {
+                    color: $color-fifth;
+                }
+            }
+
+            &:first-child::after {
+                background: $color-primary;
+                border-radius: 1em 1em 0 0;
+                content: "";
+                height: 6px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: calc(100% - 5px);
+            }
+
+            a {
+                font-family: $font-primary;
+                font-weight: 700;
+                color: $color-sixth;
+                font-size: 18px;
+                padding: 1.125em .25em 1.125em 0;
+
+
+                &:active {
+                    color: $color-fifth;
+                }
+            }
+        }
+    }
 }

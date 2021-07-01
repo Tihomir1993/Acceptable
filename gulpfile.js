@@ -45,11 +45,11 @@ function jsTask() {
     .pipe(dest('dist/scripts'));
 }
 
-// function imagesTask() {
-//   return src(files.imagesPath)
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('dist/images'));
-// }
+function imagesTask() {
+  return src(files.imagesPath)
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'));
+}
 
 function watchTask() {
   browserSync.init({
@@ -60,12 +60,12 @@ function watchTask() {
 
   watch(
     [files.scssPath, files.jsPath, files.imagesPath, files.htmlPath],
-    parallel(scssTask, jsTask)
+    parallel(scssTask, jsTask,imagesTask)
   ).on('change', browserSync.reload);
 }
 
 exports.default = series(
-  parallel(scssTask, jsTask),
+  parallel(scssTask, jsTask,imagesTask),
   watchTask
 )
 

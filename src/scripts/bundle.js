@@ -1,6 +1,6 @@
 window.addEventListener('load', (event) => {
 
-    const mobileMenu = document.getElementById("mobile-button");
+    const mobileMenu = document.getElementById("toggle-menu");
     const nav = document.querySelector(".site-header .list-wrapper");
     const iconClose = document.querySelector(".site-header .menu-close-icon");
     const iconOpen = document.querySelector(".site-header .menu-open-icon");

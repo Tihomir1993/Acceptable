@@ -1,72 +1,57 @@
 .button {
-  display: inline-block;
-  text-transform: capitalize;
-  background: transparent;
-  color: $color-primary;
-  margin: 0;
-  font-family: $font-primary;
-
-  &:hover {
+    display: inline-block;
+    text-transform: capitalize;
     background: transparent;
-  }
-
-  &-ghost {
+    color: $color-base;
+    margin: 0;
+    font-family: $font-primary;
     padding: .5em 1em;
-    border: 2px solid $color-primary;
-    border-radius: .25em;
-  }
-
-  &-login {
-    padding: .875em 1.125em;
-
-  }
-
-  &-select {
-    padding: 1.125em 1.5em 1.125em 1.375em;
-    color: $color-tetriary;
-    background: rgba(0, 110, 214, 0.09);
-    font-weight: 700;
-    font-size: 1.125em;
-    border-radius: .5em;
-
-    svg {
-      margin-left: .5em;
-    }
 
     &:hover {
-      background: #006ed636;
+        background: transparent;
     }
 
-    @media(max-width: 45.85em) {
-      width: 100%;
-      text-align: center;
+    &-ghost {
+        border: 2px solid $color-base;
+        border-radius: .25em;
     }
 
-  }
-
-  &-select-transparent {
-    background: transparent;
-    padding: 1.125em 1.5em 1.125em 1.375em;
-    color: $color-tetriary;
-    font-weight: 700;
-    font-size: 1.125em;
-    border-radius: .5em;
-    margin-top: 3em;
-    margin-left: auto;
-
-    svg {
-      margin-left: .5em;
+    &-large {
+        padding: 1.125em 1.5em 1.125em 1.375em;
+        font-size: 1.125em;
+        font-weight: 700;
     }
 
-    &:hover {
-      background: $button-hover-primary;
+    &-inline {
+
+        color: $color-primary;
+        background: $button-color-primary;
+        border-radius: .5em;
+
+        svg {
+            margin-left: .5em;
+        }
+
+        &:hover {
+            background: $button-hover-primary;
+        }
+
+        @media(max-width: 45.85em) {
+            width: 100%;
+            text-align: center;
+        }
+
     }
 
-    @media(max-width: 45.85em) {
-      width: 100%;
-      text-align: center;
-      margin-top: 0;
+    &-transparent {
+        background: transparent;
+        margin-left: auto;
+
+        &:hover {
+            background: transparent;
+            text-decoration: underline;
+        }
+
     }
-  }
 
 }

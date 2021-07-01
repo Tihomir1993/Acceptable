@@ -17,8 +17,6 @@
         flex-direction: column;
         justify-content: space-between;
 
-
-
         .social-contacts {
             svg {
                 margin-right: 1em;
@@ -36,7 +34,24 @@
 
     .list-navigation {
         display: flex;
+        align-items: flex-start;
         flex-wrap: wrap;
+
+        &-footer {
+            margin: 0;
+
+            @media(max-width:40em) {
+                padding: 0;
+            }
+
+            &:first-child {
+                margin-right: 10.5em;
+
+                @media(max-width:70em) {
+                    margin-right: 2.5em;
+                }
+            }
+        }
 
         .list {
             margin: 0;
@@ -77,8 +92,9 @@
 
         &-text {
             font-family: $font-secondary;
-            color: $color-primary;
+            color: $color-base;
             opacity: 0.6;
+            line-height: 1.5;
 
             @media(max-width:45.625em) {
                 text-align: center;
@@ -86,19 +102,16 @@
             }
         }
 
-        .list {
-            display: flex;
-            margin: 0;
+        .list-navigation {
             flex-wrap: wrap;
 
-
-
-            &-item {
+            .list-item {
                 a {
                     text-decoration: underline;
-                    color: $color-tetriary;
+                    color: $color-primary;
                     padding-right: 1.5em;
                     font-family: $font-secondary;
+                    padding-bottom: 0;
 
                 }
 
@@ -111,5 +124,4 @@
             }
         }
     }
-
 }

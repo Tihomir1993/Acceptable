@@ -1,0 +1,12 @@
+.badge {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: $font-primary;
+    padding: 0.4em 0.75em 0.25em 0.75em;
+    color: $color-base;
+    background: $background-marker;
+    position: absolute;
+    top: 0.75em;
+    left: 0.75em;
+    border-radius: 0.25em;
+}
