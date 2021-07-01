@@ -1,67 +1,63 @@
 .content-box {
+  .image-wrapper {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .image-marker {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-family: Sora;
+      padding: 0.4em 0.75em 0.25em 0.75em;
+      color: $color-primary;
+      background: $background-marker;
+      position: absolute;
+      top: 0.75em;
+      left: 0.75em;
+      border-radius: 0.25em;
+    }
+  }
+
+  &-location {
+
+    &-city,
+    &-date {
+      display: block;
+      color: $color-forth;
+      font-family: Sora;
+      padding-bottom: 0.25em;
+    }
+  }
+
+  &-description {
+    font-size: 1.125em;
+    color: $color-forth;
+    margin-bottom: 2em;
+
+    @media (max-width: 45.85em) {
+      font-size: 1em;
+    }
+  }
+
+  &-vertical {
+    display: flex;
+    align-items: center;
+    margin: 1.25em 1em 1.25em 0;
+
     .image-wrapper {
-        position: relative;
+      max-width: 12.25em;
+      max-height: 18.75em;
+      margin-right: 2.5em;
 
-        img {
-            width: 100%;
-        }
-
-        .image-marker {
-            text-transform: capitalize;
-            font-weight: 700;
-            font-family: Sora;
-            padding: .4em .75em .25em .75em;
-            color: $color-primary;
-            background: $background-marker;
-            position: absolute;
-            top: .75em;
-            left: .75em;
-            border-radius: .25em;
-        }
+      img {
+        width: auto;
+      }
     }
+  }
 
-    &-location {
-
-        &-city,
-        &-date {
-            display: block;
-            color: $color-forth;
-            font-family: Sora;
-            padding-bottom: .25em;
-
-        }
-    }
-
-    &-description {
-        font-size: 1.125em;
-        color: $color-forth;
-        margin-bottom: 2em;
-
-        @media(max-width: 45.85em) {
-            font-size: 1em;
-        }
-
-    }
-
-    &-vertical {
-
-        display: flex;
-        align-items: center;
-        margin: 1.25em 1em 1.25em 0;
-
-        .image-wrapper {
-            max-width: 12.25em;
-            max-height: 18.75em;
-            margin-right: 2.5em;
-
-            img {
-                width: auto;
-            }
-        }
-
-    }
-
-    @media(max-width: 45.85em) {
-        display: block;
-    }
+  @media (max-width: 45.85em) {
+    display: block;
+  }
 }

@@ -1,18 +1,22 @@
 .section-events {
-    padding: 6.95em 0 6.875em;
-    background: $color-primary;
+  padding: 6.95em 0 6.875em;
+  background: $color-primary;
 
-    .tab-controller {
-        display: flex;
+  @media(max-width:45.85em) {
+    padding: 2.95em 0 3em;
+  }
 
-        @media(max-width:45.85em) {
-            display: block;
-        }
+  .tab-controller {
+    display: flex;
+
+    @media(max-width: 45.85em) {
+      display: block;
     }
+  }
 
-    .events-box {
-        margin-top: 2.5em;
+  .events-box {
+    margin-top: 2.5em;
 
-    }
+  }
 
 }

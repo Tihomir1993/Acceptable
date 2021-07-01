@@ -1,72 +1,72 @@
 .button {
-    display: inline-block;
-    text-transform: capitalize;
+  display: inline-block;
+  text-transform: capitalize;
+  background: transparent;
+  color: $color-primary;
+  margin: 0;
+  font-family: $font-primary;
+
+  &:hover {
     background: transparent;
-    color: $color-primary;
-    margin: 0;
-    font-family: $font-primary;
+  }
+
+  &-ghost {
+    padding: .5em 1em;
+    border: 2px solid $color-primary;
+    border-radius: .25em;
+  }
+
+  &-login {
+    padding: .875em 1.125em;
+
+  }
+
+  &-select {
+    padding: 1.125em 1.5em 1.125em 1.375em;
+    color: $color-tetriary;
+    background: rgba(0, 110, 214, 0.09);
+    font-weight: 700;
+    font-size: 1.125em;
+    border-radius: .5em;
+
+    svg {
+      margin-left: .5em;
+    }
 
     &:hover {
-        background: transparent;
+      background: #006ed636;
     }
 
-    &-ghost {
-        padding: .5em 1em;
-        border: 2px solid $color-primary;
-        border-radius: .25em;
+    @media(max-width: 45.85em) {
+      width: 100%;
+      text-align: center;
     }
 
-    &-login {
-        padding: .875em 1.125em;
+  }
 
+  &-select-transparent {
+    background: transparent;
+    padding: 1.125em 1.5em 1.125em 1.375em;
+    color: $color-tetriary;
+    font-weight: 700;
+    font-size: 1.125em;
+    border-radius: .5em;
+    margin-top: 3em;
+    margin-left: auto;
+
+    svg {
+      margin-left: .5em;
     }
 
-    &-select {
-        padding: 1.125em 1.5em 1.125em 1.375em;
-        color: $color-tetriary;
-        background: rgba(0, 110, 214, 0.09);
-        font-weight: 700;
-        font-size: 1.125em;
-        border-radius: .5em;
-
-        svg {
-            margin-left: .5em;
-        }
-
-        &:hover {
-            background: #006ed636;
-        }
-
-        @media(max-width: 45.85em) {
-            width: 100%;
-            text-align: center;
-        }
-
+    &:hover {
+      background: $button-hover-primary;
     }
 
-    &-select-transparent {
-        background: transparent;
-        padding: 1.125em 1.5em 1.125em 1.375em;
-        color: $color-tetriary;
-        font-weight: 700;
-        font-size: 1.125em;
-        border-radius: .5em;
-        margin-top: 3em;
-        margin-left: auto;
-
-        svg {
-            margin-left: .5em;
-        }
-
-        &:hover {
-            background: $button-hover-primary;
-        }
-
-        @media(max-width: 45.85em) {
-            width: 100%;
-            text-align: center;
-            margin-top: 0;
-        }
+    @media(max-width: 45.85em) {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
     }
+  }
 
 }
